@@ -1,0 +1,55 @@
+/* Main app container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+/* Title Styling */
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Styling the search bar container */
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.search-bar input[type="text"] {
+  width: 80%;
+  max-width: 500px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  transition: border 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+  border-color: #646cff;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 0.8rem 2rem;
+  background-color: #646cff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #4c56e4;
+}
