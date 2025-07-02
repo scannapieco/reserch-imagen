@@ -1,14 +1,22 @@
-
 interface iForm{
     handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void
     isLoading: boolean
 }
 
-export const Form = ({handleSubmit,isLoading}: iForm) => {
+export const Form = ({handleSubmit, isLoading}: iForm) => {
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="text" name="form" disabled={isLoading} placeholder="Example: superman"/>
-            <button>Search</button>
+        <form className="search-form" onSubmit={handleSubmit}>
+            <input
+                className="search-input"
+                type="text"
+                name="form"
+                disabled={isLoading}
+                placeholder="Buscar imágenes..."
+                autoComplete="off"
+            />
+            <button className="search-btn" disabled={isLoading}>
+                {isLoading ? "Buscando..." : "Buscar"}
+            </button>
         </form>
-    )
+    );
 }

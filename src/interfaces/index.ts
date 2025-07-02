@@ -1,8 +1,10 @@
 export interface ResponseAPI {
+    total_pages: number;
     results: Result[];
 }
 
 export interface Result {
+    user: any;
     id: string;
     description: null | string;
     alt_description: null | string;
@@ -11,6 +13,7 @@ export interface Result {
 }
 
 export interface Urls {
+    download: string | undefined;
     raw: string;
     full: string;
     regular: string;
